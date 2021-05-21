@@ -6,9 +6,9 @@ abstract public class EnumIndex implements FunctionToInt<Enum>{
         enumeration = enumClass;
     }
     public int sizeOfAlphabet(){  
-        return size = enumeration.size();;
+        return 1;
     }
     public void apply( ){
-        for(int i = 0)
+       
     }
 }

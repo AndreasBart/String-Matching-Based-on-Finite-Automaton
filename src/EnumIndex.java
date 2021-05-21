@@ -1,14 +1,15 @@
-abstract public class EnumIndex implements FunctionToInt<Enum>{
+abstract public class EnumIndex <T> implements FunctionToInt<Enum>{
 
-    Enum enumeration;
+    Enum<T> enumeration = new Enum<T>();
 
-    public EnumIndex(Enum enumClass){
+    public EnumIndex(Class <T> enumClass){
         enumeration = enumClass;
     }
     public int sizeOfAlphabet(){  
         return 1;
     }
-    public void apply( ){
-       
+    
+    public int apply(T param){
+       return 1;
     }
 }
